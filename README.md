@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IT Asset & Equipment Tracker — Frontend
+
+A web-based dashboard for managing an organization's IT assets, equipment, categories, and employee assignments.
+
+## Technologies
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- Lucide Icons
+- Node.js and npm
+
+## Main Features
+
+- Admin dashboard with asset statistics
+- Asset management interface
+- Category management interface
+- Employee management interface
+- Asset assignment overview
+- Recent activity dashboard
+- Responsive user interface
 
 ## Getting Started
 
-First, run the development server:
+### Requirements
+
+- Node.js (LTS version recommended)
+- npm
+- Git
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/selamawit23-13/it-asset-tracker-frontend.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd it-asset-tracker-frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the application in your browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```text
+frontend/
+├── public/
+├── src/
+│   ├── app/
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   └── ui/
+│   └── lib/
+├── package.json
+├── package-lock.json
+├── next.config.ts
+└── tsconfig.json
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Backend Integration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The frontend is designed to work with the IT Asset Tracker REST API built using Java Spring Boot.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Backend repository:
 
-## Deploy on Vercel
+https://github.com/selamawit23-13/it-asset-tracker-backend
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The backend provides authentication, asset management, category management, employee assignments, and role-based access control.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Development
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+To run the production build:
+
+```bash
+npm start
+```
+
+## Repository
+
+https://github.com/selamawit23-13/it-asset-tracker-frontend
